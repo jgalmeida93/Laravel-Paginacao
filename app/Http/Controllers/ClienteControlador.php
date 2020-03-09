@@ -12,11 +12,22 @@ class ClienteControlador extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    // public function index()
+    // {
+    //     // $clientes = Cliente::all();
+    //     $clientes = Cliente::paginate(30);
+    //     return view('index', compact('clientes'));
+    // }
+
+    public function indexJs()
+    {
+        return view('indexjs');
+    }
+
+    public function indexJson()
     {
         // $clientes = Cliente::all();
-        $clientes = Cliente::paginate(30);
-        return view('index', compact('clientes'));
+        return Cliente::paginate(10);
     }
 
     /**
