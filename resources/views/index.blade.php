@@ -11,13 +11,51 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <!-- Styles -->
         <style>
-
+            body {
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="card text-center">
-                alou
+                <div class="card-header">
+                    Tabela de clientes
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Exibindo 10 clientes de 1000 (1 a 10)</h5>
+                    <table class="table table-hover">
+                        <thead>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Sobrenome</th>
+                            <th scope="col">Email</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Cesar</td>
+                                <td>Augusto</td>
+                                <td>cesar.augusto@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Cesar</td>
+                                <td>Augusto</td>
+                                <td>cesar.augusto@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Cesar</td>
+                                <td>Augusto</td>
+                                <td>cesar.augusto@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer">
+                    Páginas
+                </div>
             </div>
         </div>
 
