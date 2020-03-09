@@ -32,24 +32,14 @@
                             <th scope="col">Email</th>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Cesar</td>
-                                <td>Augusto</td>
-                                <td>cesar.augusto@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Cesar</td>
-                                <td>Augusto</td>
-                                <td>cesar.augusto@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Cesar</td>
-                                <td>Augusto</td>
-                                <td>cesar.augusto@gmail.com</td>
-                            </tr>
+                            @foreach($clientes as $cliente)
+                                <tr>
+                                    <td>{{ $cliente->id }}</td>
+                                    <td>{{ $cliente->nome }}</td>
+                                    <td>{{ $cliente->sobrenome }}</td>
+                                    <td>{{ $cliente->email }}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
