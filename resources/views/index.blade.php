@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <!-- Styles -->
         <style>
 
@@ -16,7 +16,9 @@
     </head>
     <body>
         <div class="container">
-
+            <div class="card text-center">
+                alou
+            </div>
         </div>
 
         <script src="{{ asset('js/app.js') }}" type="text/javascript">
