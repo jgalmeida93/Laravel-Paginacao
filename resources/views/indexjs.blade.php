@@ -23,7 +23,7 @@
                     Tabela de clientes
                 </div>
                 <div class="card-body">
-                <h5 class="card-title"></h5>
+                <h5 class="card-title" id="cardTitle"></h5>
                     <table class="table table-hover" id="tabelaClientes">
                         <thead>
                             <th scope="col">#</th>
@@ -147,6 +147,8 @@
                      $('#paginator>ul>li>a').click(function () {
                         carregarClientes($(this).attr('pagina'));
                     });
+                    $("#cardTitle").html(`Exibindo ${resp.per_page} clientes de ${resp.total}
+                    (${resp.from} a ${resp.to})`);
                 });
 
             }
